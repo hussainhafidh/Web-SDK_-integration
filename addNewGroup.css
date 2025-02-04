@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("https://izak.aidtaas.com/image/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 3.66vh !important;
+}
+
+.navContent {
+  width: 97.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iZAKLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 250px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.NetworkSignal {
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 99%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.sideNavContent {
+  visibility: hidden;
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+@media only screen and (max-width: 1080px) {
+  .sideNavContent {
+    width: 6%;
+  }
+
+  .userProfile {
+    width: 290px;
+    gap: 2px;
+  }
+
+  .signalGif img {
+    width: 40px;
+    height: 30px;
+  }
+
+  .bellNotification svg {
+    width: 28px;
+    height: 25px;
+  }
+
+  .profileLogo {
+    width: 27px;
+    height: 27px;
+    background-color: rgb(219, 183, 253);
+    border-radius: 50%;
+  }
+
+  .NetworkSignal svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .NetworkSignal .signalText {
+    width: 52px;
+    height: 12px;
+  }
+}
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  fill: rgba(0, 0, 0, 0.12);
+  /* backdrop-filter: blur(175px); */
+  margin-top: 1vh;
+}
+
+/* spaces starts------------ */
+
+.spacesContainer {
+  margin-top: 6vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+.assignSpaces {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.headerText {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.addNewGroupInput input {
+  display: flex;
+  width: 473px;
+  padding: 12px 355px 12px 16px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--Color, #fff);
+  background: #2f3134;
+  backdrop-filter: blur(6.87976598739624px);
+  outline: none;
+  color: gray;
+}
+
+.homewrapper {
+  width: 100%;
+  height: auto;
+}
+
+.homeSpaces {
+  width: 100%;
+  height: auto;
+  max-height: 64vh;
+  overflow-y: scroll !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2vh;
+}
+
+.homeSpaces::-webkit-scrollbar {
+  width: 0.5vw !important;
+}
+
+.homeSpaces::-webkit-scrollbar-track {
+  border-radius: 8px !important;
+  opacity: 0.1 !important;
+  background: #f1f1f1 !important;
+}
+
+.homeSpaces::-webkit-scrollbar-thumb {
+  border-radius: 8px !important;
+  background: #0b82f9 !important;
+}
+
+.space4SingleCard {
+  position: relative;
+  width: 24%;
+  height: 38.33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 81.82%
+    ),
+    url(<path-to-image>) lightgray 50% / cover no-repeat;
+  backdrop-filter: blur(32px); */
+}
+.space4SingleCard:hover{
+  border-radius: 8px;
+  border: 1px solid var(--Color, #FFF);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 81.82%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.50);
+  /* backdrop-filter: blur(32px);   */
+}
+
+.space4CardImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.space4CardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.space4ContentAboveImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 2;
+
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 1%;
+}
+
+.space4Room {
+  width: 100%;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.space4Room p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (max-width: 1260px) and (min-width: 1px) {
+  .homeSpaces {
+    gap: 4px !important;
+  }
+}
