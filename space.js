@@ -6,7 +6,10 @@ document.querySelectorAll('.spaceSingleCard').forEach(card => {
 
 
 const dataLayer = {
-  pageType: "productPage"
+  pageType: "productPage",
+  pageName: 'furnitureProduct',
+  productListNumber: 10,
+  browserWidth: 1024
 }
 
 
