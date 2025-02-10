@@ -5,12 +5,7 @@ document.querySelectorAll('.spaceSingleCard').forEach(card => {
 });
 
 
-const dataLayer = {
-  pageType: "productPage",
-  pageName: 'furnitureProduct',
-  productListNumber: 10,
-  browserWidth: 1024
-}
+
 
 
 const btn1 = document.getElementById("b1");
