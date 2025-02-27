@@ -42,6 +42,7 @@
 }
 
 .dateTimeTemp {
+  display:none;
   width: 250px;
   color: var(--Color, #fff);
   font-family: Lato;
